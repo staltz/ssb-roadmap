@@ -103,7 +103,7 @@ progress<y:LabelModel>
           <y:Geometry height="66.39906609195403" width="434.06683899132634" x="767.220945583702" y="-42.9772836702928"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="59.875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="l" textColor="#000000" verticalTextPosition="bottom" visible="true" width="439.8984375" x="4.0" y="3.262033045977013">Last updated: 2018-08-02
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="59.875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="l" textColor="#000000" verticalTextPosition="bottom" visible="true" width="439.8984375" x="4.0" y="3.262033045977013">Last updated: 2018-08-23
 (By @andrestaltz to the best of his knowledge.
 Please inform him if something needs updating)</y:NodeLabel>
           <y:Shape type="rectangle"/>
@@ -675,7 +675,7 @@ plugins hub
         <node id="n7::n21">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="59.0" width="189.49236584594888" x="587.3883295454634" y="430.3511921866449"/>
+              <y:Geometry height="59.0" width="189.49236584594888" x="548.8833333333337" y="454.8249527584263"/>
               <y:Fill color="#FFCCCC" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="143.2890625" x="23.101651672974413" y="13.53125">personas
@@ -1365,7 +1365,7 @@ Android Beta<y:LabelModel>
               <data key="d6">
                 <y:ShapeNode>
                   <y:Geometry height="59.0" width="172.0" x="969.1079365079365" y="2229.815503730922"/>
-                  <y:Fill color="#FFFF99" transparent="false"/>
+                  <y:Fill color="#CCFFCC" transparent="false"/>
                   <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="76.890625" x="47.5546875" y="20.515625">Sync screen<y:LabelModel>
                       <y:SmartNodeLabelModel distance="4.0"/>
@@ -1508,7 +1508,7 @@ screen bug<y:LabelModel>
               <data key="d6">
                 <y:ShapeNode>
                   <y:Geometry height="59.0" width="153.74712643678185" x="1161.9815955117676" y="2346.918975953144"/>
-                  <y:Fill color="#FFFF99" transparent="false"/>
+                  <y:Fill color="#CCFFCC" transparent="false"/>
                   <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="104.2421875" x="24.752469468390927" y="13.53125">#11 Add pubs in
 Sync screen<y:LabelModel>
@@ -1635,7 +1635,7 @@ New messages dot<y:LabelModel>
                   <y:Geometry height="59.0" width="153.74712643678185" x="463.2081828133551" y="2229.815503730922"/>
                   <y:Fill color="#FFCCCC" transparent="false"/>
                   <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="98.3125" x="27.717313218390927" y="20.515625">#43 Self avatar<y:LabelModel>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="98.3125" x="27.71731321839087" y="20.515625">#43 Self avatar<y:LabelModel>
                       <y:SmartNodeLabelModel distance="4.0"/>
                     </y:LabelModel>
                     <y:ModelParameter>
@@ -1757,11 +1757,12 @@ for android<y:LabelModel>
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="59.0" width="112.42247536945746" x="420.00027025177917" y="1399.7996874934888"/>
-              <y:Fill color="#FFCCCC" transparent="false"/>
+              <y:Fill color="#FFFF99" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.90625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="82.1171875" x="15.152643934728758" y="6.546875">compile
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="59.875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="82.1171875" x="15.152643934728758" y="-0.4375">compile
 node-sodium
-for android<y:LabelModel>
+for android
+(@Luandro)<y:LabelModel>
                   <y:SmartNodeLabelModel distance="4.0"/>
                 </y:LabelModel>
                 <y:ModelParameter>
@@ -2177,11 +2178,10 @@ on-demand
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="59.0" width="171.9999999999999" x="1323.5488095238095" y="1399.7996874934888"/>
-              <y:Fill color="#FFFF99" transparent="false"/>
+              <y:Fill color="#FFCCCC" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.90625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="140.11328125" x="15.943359375" y="6.546875">Use nodejs-mobile
-to port MMMMM to iOS
-(@Luandro)<y:LabelModel>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="140.11328125" x="15.943359375" y="13.53125">Use nodejs-mobile
+to port MMMMM to iOS<y:LabelModel>
                   <y:SmartNodeLabelModel distance="4.0"/>
                 </y:LabelModel>
                 <y:ModelParameter>
@@ -2214,7 +2214,7 @@ for ios<y:LabelModel>
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="59.0" width="112.42247536945752" x="1353.8375718390807" y="1510.0926438426952"/>
-              <y:Fill color="#FFFF99" transparent="false"/>
+              <y:Fill color="#E5E5E5" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="68.728515625" x="21.846979872228758" y="13.53125">leveldown 
 for ios<y:LabelModel>
@@ -2992,7 +2992,6 @@ ios internals
       </data>
     </edge>
     <edge id="n7::e12" source="n7::n17" target="n7::n22">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -3049,7 +3048,6 @@ ios internals
       </data>
     </edge>
     <edge id="n10::n2::e4" source="n10::n2::n2" target="n10::n2::n10">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="57.33333333333333" sy="29.5" tx="0.0" ty="-29.5">
@@ -3063,7 +3061,6 @@ ios internals
       </data>
     </edge>
     <edge id="n10::n2::e5" source="n10::n2::n2" target="n10::n2::n0">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-57.33333333333337" sy="29.5" tx="39.59666724941599" ty="-29.5">
@@ -3079,7 +3076,6 @@ ios internals
       </data>
     </edge>
     <edge id="n10::n2::e6" source="n10::n2::n2" target="n10::n2::n5">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="29.5" tx="0.0" ty="-29.5"/>
@@ -3188,7 +3184,6 @@ ios internals
       </data>
     </edge>
     <edge id="n10::n2::e15" source="n10::n2::n10" target="n10::n2::n0">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="29.5" tx="59.395000874123994" ty="-29.5">
