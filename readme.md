@@ -10,21 +10,25 @@ graph LR
     %% TASK DEFINITIONS %%
     %%%%%%%%%%%%%%%%%%%%%%
 
-    protocol-docs
-    docs-website-aggregation
-    gossip-refactor
+    protocol-docs %% https://ssbc.github.io/scuttlebutt-protocol-guide/
+    docs-website-aggregation %% website renewal and centralization
+    gossip-refactor %% @staltz is doing this
+    ssb-conn-db %% @staltz is doing this
+    ssb-conn-hub %% @staltz is doing this
+    ssb-conn-utils %% @staltz is doing this
+    ssb-legacy-conn %% @staltz is doing this
     ssb-friends3
     same-as
-    muxrpc-push-stream
+    muxrpc-push-stream %% maybe @dominic is doing this
     soft-edit-msg
     wiki-msg
     account-milestones
     offlog-online-authenticated-chat
 
     subgraph performance
-        rust-ssb
-        ssb-binary-database
-        pull-drain-gently
+        rust-ssb %% sunrise choir is doing this
+        ssb-binary-database %% maybe @dominic is doing this
+        pull-drain-gently %% idea from @staltz
         gently-build-flume-indexes
         lazy-indexes
         holding-tank-log
@@ -33,14 +37,15 @@ graph LR
     end
 
     subgraph servers
-        ssb-tunnel
+        ssb-tunnel %% done by dominic, needs testing in the real world
         cjdns-nodejs-bindings
         multiserver-cjdns
-        rooms
-        ssb-dht-invites
+        rooms %% idea from @staltz
+        ssb-dht-invites %% https://gitlab.com/staltz/ssb-dht-invite
+        broadcast-pubs %% idea from @staltz
         hyperswarm-usage
         dht-invites-in-production
-        ssb-bluetooth
+        ssb-bluetooth %% https://github.com/Happy0/ssb-bluetooth/
     end
 
     subgraph free listening
@@ -72,13 +77,13 @@ graph LR
     %% STATUS DEFINITIONS %%
     %%%%%%%%%%%%%%%%%%%%%%%%
     %% To do:
-    class rooms,gossip-refactor,ssb-lists-in-production,flag-a-msg,blame-a-blob,byte-count-per-feed,storage-usage-stats,hop-2-usernames,publicWebHosting-config-in-apps,blob-management,block-blob,delete-feed-from-flume,delete-blobs-of-user,soft-edit-msg,soft-delete-msg,wiki-msg,pull-drain-gently,gently-build-flume-indexes,lazy-indexes,replicate-close-friends-first,account-milestones,offlog-online-authenticated-chat,docs-website-aggregation,cjdns-nodejs-bindings,multiserver-cjdns,holding-tank-log,gentle-flume-index-building todo
+    class rooms,gossip-refactor,ssb-lists-in-production,flag-a-msg,blame-a-blob,byte-count-per-feed,storage-usage-stats,hop-2-usernames,publicWebHosting-config-in-apps,blob-management,block-blob,delete-feed-from-flume,delete-blobs-of-user,soft-edit-msg,soft-delete-msg,wiki-msg,pull-drain-gently,gently-build-flume-indexes,lazy-indexes,replicate-close-friends-first,account-milestones,offlog-online-authenticated-chat,docs-website-aggregation,cjdns-nodejs-bindings,multiserver-cjdns,holding-tank-log,gentle-flume-index-building,ssb-conn-utils,broadcast-pubs todo
 
     %% Work in progress:
-    class ssb-tunnel,rust-ssb,same-as,muxrpc-push-stream,private-groups,private-block-in-production,auditable-user-invites,ssb-binary-database,hyperswarm-usage,dht-invites-in-production,ssb-bluetooth wip
+    class ssb-tunnel,rust-ssb,same-as,muxrpc-push-stream,private-groups,private-block-in-production,auditable-user-invites,ssb-binary-database,hyperswarm-usage,dht-invites-in-production,ssb-conn-hub,ssb-legacy-conn wip
 
     %% Done:
-    class protocol-docs,ssb-friends3,private-block,ssb-lists,publicWebHosting,delete-blob,ssb-dht-invites done
+    class protocol-docs,ssb-friends3,private-block,ssb-lists,publicWebHosting,delete-blob,ssb-dht-invites,ssb-conn-db,ssb-bluetooth done
 
     %%%%%%%%%%%%%%%%%%%%%%%
     %% ORDER CONSTRAINTS %%
@@ -108,6 +113,12 @@ graph LR
     hyperswarm-usage --> dht-invites-in-production
     holding-tank-log --> gentle-flume-index-building
     pull-drain-gently --> gentle-flume-index-building
+    ssb-conn-db --> ssb-legacy-conn
+    ssb-conn-hub --> ssb-legacy-conn
+    ssb-conn-utils --> ssb-legacy-conn
+    ssb-legacy-conn --> gossip-refactor
+    gossip-refactor --> rooms
+    gossip-refactor --> broadcast-pubs
 
     %%%%%%%%%%%%
     %% Styles %%
